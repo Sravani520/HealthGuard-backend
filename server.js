@@ -13,7 +13,7 @@ app.use(cors({
 }));
 
 //connect mongobd
-mongoose.connect('mongodb+srv://Sravani520:Sravani09@cluster0.o26nd8w.mongodb.net/?retryWrites=true&w=majority').then(
+mongoose.connect('mongodb+srv://Sravani:67331@cluster0.o26nd8w.mongodb.net/?retryWrites=true&w=majority').then(
     console.log("Db is connected")
 );
 
