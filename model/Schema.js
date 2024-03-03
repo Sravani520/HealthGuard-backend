@@ -10,5 +10,18 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-module.exports = { User };
+const sensorDataSchema = new mongoose.Schema({
+    temperature: { type: Number, required: true },
+    heartbeat: { type: Number, required: true },
+    spo2: { type: Number, required: true },
+    fallDetected: { type: Boolean, required: true },
+    severityLevel: { type: String, required: true }
+}, {
+    timestamps: true,
+});
+
+const SensorData = mongoose.model("SensorData", sensorDataSchema);
+
+
+module.exports = { User, SensorData};
 
